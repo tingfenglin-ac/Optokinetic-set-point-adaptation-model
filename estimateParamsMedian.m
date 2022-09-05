@@ -15,7 +15,7 @@
 % and using global search methods prior to running the simiulations is
 % strongly encourage as it will provide insight as to what the range of
 % robust and optimial parameters is. 
-initParams = 'initParamOptimMedian3';
+initParams = 'initParamOptimMedianExample';
 
 
 % The paramerers include B = 0 (used for estimating the parameters of
@@ -50,12 +50,10 @@ initialParameters.Kvsm = Kvsm;      % velocity storage integrator gain
 initialParameters.Ta = Ta;          % adaptation time constant
 initialParameters.Th = Th;          % habituation time constant
 initialParameters.Tvsm = Tvsm;      % velocity storage time constant
-initialParameters.Tgain1 = Tgain1;  % temporal asymmetry gain (right eye)
-initialParameters.Ngain1 = Ngain1;  % nasal asymmetry gain (right eye)
-initialParameters.Tgain2 = Tgain2;  % temporal asymmetry gain (left eye)
-initialParameters.Ngain2 = Ngain2;  % nasal asymmetry gain (left eye)
+initialParameters.Tgain = Tgain;  % temporal asymmetry gain (right eye)
+initialParameters.Ngain = Ngain;  % nasal asymmetry gain (left eye)
 initialParameters.B = B;            % bias ( set to 0 for median population simulations)
-fprintf(intiMessage);
+fprintf(initMessage);
 % note that temoral and nasal asymmetry gains were assumed to be indentical
 % for final simulations and the result shown in the manuscript
 
